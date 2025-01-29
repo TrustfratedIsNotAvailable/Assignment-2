@@ -208,7 +208,7 @@ main section{
 }
 .story-cards{
     display:grid;
-    grid-template-columns: 500px repeat(2,1fr);
+    grid-template-columns:500px repeat(2,1fr);
     gap: 10px;
     width:90%;
     margin:80px auto;
@@ -280,6 +280,9 @@ main section{
     margin-bottom:60px;
 }
 
+/* footer styles  */
+
+
 /* Responsive*/
 @media screen and (max-width:576px) {
     /* navbar & banner  */
@@ -291,6 +294,7 @@ main section{
     }
     .navbar{
         width:100%;
+        border-bottom: 1px solid orange;
     }
     .banner{
         flex-direction: column-reverse;
@@ -316,7 +320,7 @@ main section{
     .std-cards{
         grid-template-columns: repeat(1,1fr);
     }
-    .std-title{
+    .std-title,.story-header{
         font-size: 26px;
         font-weight: bold;
         margin-top: 40px;
@@ -329,6 +333,11 @@ main section{
     /* our stories  */
     .story-cards{
         grid-template-columns:repeat(2,1fr);
+    }
+    .story-btn{
+        padding: 10px;
+        font-size: 12px;
+        margin-left: 15px;
     }
 
 }
