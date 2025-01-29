@@ -102,15 +102,14 @@ ul li{
     font-weight: bold;
 }
 /* main styles  */
-main{
-    width:90%;
-    margin:0px auto;
-}
-
 main section{
     background-image: url(../images/bg.png);
 }
 /* Standard curriculum styles  */
+.std{
+    width:90%;
+    margin:0px auto; 
+}
 .std-title{
     font-size: 46px;
     font-weight: bold;
@@ -190,9 +189,101 @@ main section{
     color:white;
     font-size: 24px;
 }
-/* Responsive : nav & banner */
+
+/* story styles  */
+.story {
+    background: 
+    linear-gradient(to top, rgba(254, 163, 1, 0.21), rgba(255, 255, 255, 0.21)),  /* Adjusted transparency */
+    url(../images/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.story-header{
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+    padding-top:20px;
+}
+.story-cards{
+    display:grid;
+    grid-template-columns: 500px repeat(2,1fr);
+    gap: 10px;
+    width:90%;
+    margin:80px auto;
+}
+
+.story-1{
+    grid-row: span 2;
+}
+
+ .story-1, 
+ .story-2, 
+ .story-3, 
+ .story-4, 
+ .story-5 {
+    border-radius: 15px;
+    overflow: hidden; 
+    background-color: white;
+}
+.story-img {
+    width: 100%;
+    display: block;
+}
+.story-btn{
+    border-radius: 48px;
+    padding: 9px 19px;
+    font-size: 15px;
+    font-weight: medium;
+    background-color: rgba(149, 178, 38, 1);
+    color: white;
+    border: none;
+    height: 40px;
+    margin-top: -24px;
+    margin-left: 25px;
+    z-index: 10;
+    display: block;
+    position: relative; 
+}
+.story-1 .story-btn{
+    background-color:rgba(60, 216, 232, 1);
+}
+
+.story-3 .story-btn{
+    background-color:rgba(93, 88, 240, 1) ;
+}
+
+.story-1 h4{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 53px;
+    padding:28px 38px;
+}
+.story-title{
+    font-size: 15px;
+    font-weight: bold;
+    margin:28px 38px;
+}
+.story-description{
+    font-size: 15px;
+    font-weight: medium;
+    margin:47px 68px 34px 38px;
+}
+
+.view-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.view-btn button{
+    margin-bottom:60px;
+}
+
+/* Responsive*/
 @media screen and (max-width:576px) {
-    .lists,.btn-primary{
+    /* navbar & banner  */
+    .lists,.btn-primary,.story-1{
         display:none;
     }
     .menu-icon{
@@ -233,6 +324,11 @@ main section{
     }
     .btn-slide{
         display: none;
+    }
+
+    /* our stories  */
+    .story-cards{
+        grid-template-columns:repeat(2,1fr);
     }
 
 }
