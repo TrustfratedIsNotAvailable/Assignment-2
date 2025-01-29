@@ -101,7 +101,95 @@ ul li{
     font-size: 1.25rem;
     font-weight: bold;
 }
+/* main styles  */
+main{
+    width:90%;
+    margin:0px auto;
+}
 
+main section{
+    background-image: url(../images/bg.png);
+}
+/* Standard curriculum styles  */
+.std-title{
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 80px;
+    color:rgba(0, 0, 0, 1);
+}
+.std-cards{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:28px;
+    margin-bottom: 80px;
+}
+
+.card-1,.card-2,.card-3{
+    border-radius: 19px;
+    padding: 40px;
+}
+.card-1{
+    box-sizing: border-box;
+    border: 0.94px solid rgba(222, 245, 255, 1);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgba(222, 245, 255, 1),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.card-2{
+    box-sizing: border-box;
+    border: 0.94px solid rgba(255, 244, 220, 1);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgba(255, 244, 220, 1),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.card-3{
+    box-sizing: border-box;
+    border: 0.94px solid rgba(242, 232, 255, 1);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgba(242, 232, 255, 1),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.card-img{
+    display: flex;
+    justify-content: center;
+}
+
+.card-title{
+    text-align: center;
+}
+.card-description{
+    text-align:center;
+}
+
+.read{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+.card-1 .read{
+   color:rgba(100, 200, 255, 1); 
+}
+.card-2 .read{
+   color:rgba(240, 170, 0, 1); 
+}
+.card-3 .read{
+   color:rgba(135, 0, 255, 1); 
+}
+
+.btn-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:60px;
+    gap:10px;
+}
+.prev,.next{
+    width: 60px;
+    height: 60px;
+    border:none;
+    border-radius: 30px;
+    background-color: rgb(254, 163, 1);
+    color:white;
+    font-size: 24px;
+}
 /* Responsive : nav & banner */
 @media screen and (max-width:576px) {
     .lists,.btn-primary{
@@ -132,4 +220,19 @@ ul li{
     .btn-div{
        text-align: center;
     }
+
+    /* standard curriculum  */
+    .std-cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .std-title{
+        font-size: 26px;
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .btn-slide{
+        display: none;
+    }
+
 }
