@@ -284,7 +284,7 @@ main section{
 .footer-part{
     display:flex;
     justify-content: space-between;
-    padding:123px 228px 174px 140px;
+    padding:80px 228px 70px 140px;
     background-color: rgba(1, 172, 253, 1.00);
     color:#ffffff;
 }
